@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bekhouche.github.io/sitemap.xml
+Sitemap: https://salah.bekhouche.com/sitemap.xml

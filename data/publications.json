@@ -1,7 +1,61 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-07-26",
+  "lastUpdated": "2026-11-24",
   "publications": [
+    {
+      "id": "crosslidar",
+      "year": 2027,
+      "topic": "vision",
+      "type": "Conference · LiDAR generation",
+      "title": "CrossLiDAR: Controllable Multi-Sensor LiDAR Sequence Generation",
+      "authors": [
+        {
+          "name": "Khanh Nguyen"
+        },
+        {
+          "name": "Thomas Walker"
+        },
+        {
+          "name": "Hichem Telli"
+        },
+        {
+          "name": "Carlos de la Torre-Ortiz"
+        },
+        {
+          "name": "Stefano Fiorini"
+        },
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Mohammed-En-Nadhir Zighem"
+        },
+        {
+          "name": "Wassim Swaileh"
+        },
+        {
+          "name": "Tinghuai Wang"
+        }
+      ],
+      "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027), accepted",
+      "links": [
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2611.11131",
+          "primary": true
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.11131",
+          "primary": false
+        }
+      ],
+      "metadataStatus": "profile-record",
+      "abstract": "High-fidelity LiDAR simulation remains a bottleneck for scalable development and validation of autonomous systems. Existing generators can synthesize realistic scans, but they are typically constrained to a single sensor configuration, offer limited control over structure and geometry, and drift in long-horizon 4D generation. We present CrossLiDAR, a unified transformer-based framework capable of generating controllable and spatio-temporally consistent multi-sensor LiDAR sequences. Our approach leverages a rectified flow objective with a Multi-Modal Diffusion Transformer (MM-DiT) backbone, within a compact latent space of range images. To support multiple LiDAR sensors, an Inter-sensor Module enables interaction across sensors, while a ControlNet-style branch provides structural conditioning (e.g., BEV priors or 3D bounding boxes). For modeling the temporal consistency, CrossLiDAR generates short N-frame sequences and extends them autoregressively to improve long-horizon coherence. Our model significantly outperforms state-of-the-art baselines, achieving an average improvement of 29.56% in JSD and 15.36% in MMD evaluated on nuScenes and the Waymo Dataset. CrossLiDAR bridges the gap to modern autonomous-driving simulation by enabling calibration-consistent multi-sensor LiDAR rollouts over long horizons for controllable, scenario-based testing.",
+      "abstractLabel": "Abstract",
+      "bibtex": "@inproceedings{nguyen2027crosslidar,\n  title = {CrossLiDAR: Controllable Multi-Sensor LiDAR Sequence Generation},\n  author = {Khanh Nguyen and Thomas Walker and Hichem Telli and Carlos de la Torre-Ortiz and Stefano Fiorini and Salah Eddine Bekhouche and Mohammed-En-Nadhir Zighem and Wassim Swaileh and Tinghuai Wang},\n  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},\n  year = {2027},\n  eprint = {2611.11131},\n  archivePrefix = {arXiv}\n}"
+    },
     {
       "id": "hallutruthqa",
       "year": 2026,
@@ -783,6 +837,150 @@
       "bibtex": "@misc{Zidi2026TMFRSE,\n  title  = {TMF-RSE: Tri-Modal Fusion with Regional Semantics and Evidential Uncertainty for Lung Severity Scoring},\n  author = {Fadi Abdeladhim Zidi and Salah Eddine Bekhouche and Abdellah Zakaria Sellam and Gaby Maroun and Fadi Dornaika and Cosimo Distante},\n  journal= {arXiv preprint arXiv:2607.06356},\n  year   = {2026},\n  eprint = {2607.06356},\n  archivePrefix = {arXiv},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:uWQEDVKXjbEC}\n}"
     },
     {
+      "id": "halluscoring-2026",
+      "year": 2026,
+      "topic": "other",
+      "type": "Preprint · arXiv",
+      "title": "Halluscoring 2026: The First Shared Task on LLM Hallucination Detection and Answer Verification",
+      "authors": [
+        {
+          "name": "Aisha Alansari"
+        },
+        {
+          "name": "Abdessalam Bouchekif"
+        },
+        {
+          "name": "Ahmed Hasanaath"
+        },
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Malak Alkhorasani"
+        },
+        {
+          "name": "Mohammed-En-Nadhir Zighem"
+        },
+        {
+          "name": "Saad Ezzini"
+        },
+        {
+          "name": "Hichem Telli"
+        },
+        {
+          "name": "Hend Suliman Al-Khalifa"
+        },
+        {
+          "name": "Muhammad Abdul-Mageed"
+        },
+        {
+          "name": "Abdenour Hadid"
+        },
+        {
+          "name": "Hamzah Luqman"
+        }
+      ],
+      "venue": "arXiv preprint arXiv:2609.38355, 2026",
+      "links": [
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2609.38355",
+          "primary": true
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2609.38355",
+          "primary": false
+        }
+      ],
+      "metadataStatus": "profile-record",
+      "abstract": "We present HalluScoring 2026, a shared task for evaluating hallucination detection and factual verification in Arabic question answering under challenging generalization settings. Its four subtasks are organized into two tasks. Task 1 evaluates binary hallucination detection, considering generalization to unseen questions (Subtask 1.1) and responses generated by unseen LLMs (Subtask 1.2). Task 2 extends the evaluation beyond detection by requiring the systems to additionally identify the correct factual answer from six related candidates, covering Islamic knowledge (Subtask 2.1) and general knowledge (Subtask 2.2). The shared task is based on two Arabic datasets: HalluScore and HalluTruthQA. A total of 13 teams participated in the shared task, ten of which submitted system description papers. The results of Task 1 demonstrate that hallucination detection remains challenging. On the Task 1 test sets, the top-ranked systems achieved AUC-ROC scores of 0.7717 for Subtask 1.1 (REGLAT) and 0.7670 for Subtask 1.2 (NAMAA). Under assisted evaluation, the highest combined detection and answer-selection scores for Subtasks 2.1 and 2.2 were 0.8824 and 0.8565, respectively.",
+      "abstractLabel": "Abstract",
+      "bibtex": "@misc{alansari2026halluscoring,\n  title = {Halluscoring 2026: The First Shared Task on LLM Hallucination Detection and Answer Verification},\n  author = {Aisha Alansari and Abdessalam Bouchekif and Ahmed Hasanaath and Salah Eddine Bekhouche and Malak Alkhorasani and Mohammed-En-Nadhir Zighem and Saad Ezzini and Hichem Telli and Hend Suliman Al-Khalifa and Muhammad Abdul-Mageed and Abdenour Hadid and Hamzah Luqman},\n  howpublished = {arXiv},\n  year = {2026},\n  eprint = {2609.38355},\n  archivePrefix = {arXiv}\n}"
+    },
+    {
+      "id": "hallutruthqa-4k",
+      "year": 2026,
+      "topic": "other",
+      "type": "Preprint · arXiv",
+      "title": "HalluTruthQA-4K: A Fine-Grained Corpus and Annotation Process for Arabic Hallucination Detection and Truth Verification",
+      "authors": [
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Abdessalam Bouchekif"
+        },
+        {
+          "name": "Hichem Telli"
+        },
+        {
+          "name": "Mohammed-En-Nadhir Zighem"
+        },
+        {
+          "name": "Abdenour Hadid"
+        }
+      ],
+      "venue": "arXiv preprint arXiv:2608.03966, 2026",
+      "links": [
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2608.03966",
+          "primary": true
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2608.03966",
+          "primary": false
+        },
+        {
+          "label": "Dataset",
+          "url": "https://huggingface.co/datasets/Bekhouche/HalluTruthQA-4K"
+        }
+      ],
+      "metadataStatus": "profile-record",
+      "abstract": "Large language models can generate fluent answers, yet factual errors remain challenging to detect, localize, explain, and verify. Existing Arabic hallucination benchmarks typically focus on response-level judgments, with limited support for identifying the exact erroneous content, explaining why it is incorrect, or identifying the correct factual answer. We introduce HalluTruthQA-4K, an expert-annotated extension of the HalluTruthQA benchmark, expanding the corpus from 2,400 to 4,000 Arabic question answering (QA) instances across four knowledge-intensive domains: Islamic knowledge, history, science, and geography. Each instance contains an Arabic question, a modelgenerated response, a verified reference answer, and six candidate answers consisting of one correct answer and five plausible distractors. For hallucinated responses, the corpus additionally provides character-level hallucination spans and human-written explanations. The resulting corpus contains 1,789 hallucinated and 2,211 non-hallucinated responses, with 2,419 annotated erroneous spans. These annotations support four main evaluation tasks: binary hallucination detection, hallucination span localization, explanation generation and evaluation, and multiple-choice factual verification (MCQ). We describe the corpus construction and quality-control process, including controlled response generation, expert annotation, independent verification, and adjudication. By providing multiple levels of factual error annotation within the same QA instances, HalluTruthQA-4K enables fine-grained evaluation of factual reliability in Arabic LLMs. The corpus is publicly available on Hugging Face (https://huggingface.co/datasets/Bekhouche/HalluTruthQA-4K).",
+      "abstractLabel": "Abstract",
+      "bibtex": "@misc{bekhouche2026hallutruthqa4k,\n  title = {HalluTruthQA-4K: A Fine-Grained Corpus and Annotation Process for Arabic Hallucination Detection and Truth Verification},\n  author = {Salah Eddine Bekhouche and Abdessalam Bouchekif and Hichem Telli and Mohammed-En-Nadhir Zighem and Abdenour Hadid},\n  howpublished = {arXiv},\n  year = {2026},\n  eprint = {2608.03966},\n  archivePrefix = {arXiv}\n}"
+    },
+    {
+      "id": "gas-turbine-emissions",
+      "year": 2026,
+      "topic": "other",
+      "type": "Conference paper",
+      "title": "Machine Learning Model Comparison for Gas Turbine Emissions Prediction",
+      "authors": [
+        {
+          "name": "Chahrazad Rahmani"
+        },
+        {
+          "name": "Azeddine Benlamoudi"
+        },
+        {
+          "name": "Fares Bennaceur"
+        },
+        {
+          "name": "Chaira Kezzal"
+        },
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Yazid Bounab"
+        },
+        {
+          "name": "Djamel Samai"
+        }
+      ],
+      "venue": "2nd National Conference on Artificial Intelligence and Digital Transition (CAIDT'26), Kasdi Merbah University, Ouargla, Algeria, 2026",
+      "links": [],
+      "metadataStatus": "profile-record",
+      "bibtex": "@inproceedings{rahmani2026gasturbine,\n  title = {Machine Learning Model Comparison for Gas Turbine Emissions Prediction},\n  author = {Chahrazad Rahmani and Azeddine Benlamoudi and Fares Bennaceur and Chaira Kezzal and Salah Eddine Bekhouche and Yazid Bounab and Djamel Samai},\n  booktitle = {2nd National Conference on Artificial Intelligence and Digital Transition (CAIDT'26), Kasdi Merbah University, Ouargla, Algeria},\n  year = {2026}\n}"
+    },
+    {
       "id": "lola-specvit",
       "year": 2025,
       "topic": "remote",
@@ -1120,15 +1318,15 @@
       "id": "advancing-face-analysis-in-images-and-videos-age-estimation-and-drowsine",
       "year": 2025,
       "topic": "vision",
-      "type": "Publication",
-      "title": "Advancing Face Analysis in Images and Videos: Age Estimation and Drowsiness Detection.",
+      "type": "Thesis",
+      "title": "Advancing Face Analysis in Images and Videos: Age Estimation and Drowsiness Detection",
       "authors": [
         {
           "name": "Salah Eddine Bekhouche",
           "highlight": true
         }
       ],
-      "venue": "Venue not listed on Google Scholar",
+      "venue": "PhD thesis in Computer Engineering, University of the Basque Country, 2025",
       "links": [
         {
           "label": "Scholar",
@@ -1287,64 +1485,6 @@
       "abstractLabel": "Abstract",
       "abstract": "Fine-grained object detection in challenging visual domains, such as vehicle damage assessment, presents a formidable challenge even for human experts to resolve reliably. While DiffusionDet has advanced the state-of-the-art through conditional denoising diffusion, its performance remains limited by local feature conditioning in context-dependent scenarios. We address this fundamental limitation by introducing Context-Aware Fusion (CAF), which leverages cross-attention mechanisms to integrate global scene context with local proposal features directly. The global context is generated using a separate dedicated encoder that captures comprehensive environmental information, enabling each object proposal to attend to scene-level understanding. Our framework significantly enhances the generative detection paradigm by enabling each object proposal to attend to comprehensive environmental information. Experimental results demonstrate an improvement over state-of-the-art models on the CarDD benchmark, establishing new performance benchmarks for context-aware object detection in fine-grained domains",
       "bibtex": "@misc{Sellam2025CDiffDet,\n  title  = {C-DiffDet+: Fusing Global Scene Context with Generative Denoising for High-Fidelity Car Damage Detection},\n  author = {Abdellah Zakaria Sellam and Ilyes Benaissa and Salah Eddine Bekhouche and Abdenour Hadid and Vito Renó and Cosimo Distante},\n  journal= {arXiv preprint arXiv:2509.00578},\n  year   = {2025},\n  eprint = {2509.00578},\n  archivePrefix = {arXiv},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:D03iK_w7-QYC}\n}"
-    },
-    {
-      "id": "c-diffdet-fusing-global-scene-context-with-generative-denoising-for-high",
-      "year": 2025,
-      "topic": "vision",
-      "type": "Publication",
-      "title": "C-DiffDet+: Fusing Global Scene Context with Generative Denoising for High-Fidelity Object Detection",
-      "authors": [
-        {
-          "name": "Abdellah Zakaria Sellam"
-        },
-        {
-          "name": "Ilyes Benaissa"
-        },
-        {
-          "name": "Salah Eddine Bekhouche",
-          "highlight": true
-        },
-        {
-          "name": "Abdenour Hadid"
-        },
-        {
-          "name": "Vito Renó"
-        },
-        {
-          "name": "Cosimo Distante"
-        }
-      ],
-      "venue": "Venue not listed on Google Scholar",
-      "links": [
-        {
-          "label": "Scholar",
-          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:ZHo1McVdvXMC",
-          "primary": true
-        }
-      ],
-      "metadataStatus": "scholar-detail",
-      "scholar": {
-        "profileId": "IiMXAxUAAAAJ",
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:ZHo1McVdvXMC",
-        "authors": "Abdellah Zakaria Sellam, Ilyes Benaissa, Salah Eddine Bekhouche, Abdenour Hadid, Vito Renó, Cosimo Distante",
-        "authorsTruncated": false,
-        "venue": "",
-        "year": 2025,
-        "citations": 0,
-        "citedByUrl": null,
-        "details": {
-          "Authors": "Abdellah Zakaria Sellam, Ilyes Benaissa, Salah Eddine Bekhouche, Abdenour Hadid, Vito Renó, Cosimo Distante",
-          "Publication date": "2025/9/9",
-          "Description": "Fine-grained object detection in challenging visual domains, such as vehicle damage assessment, presents a formidable challenge even for human experts to resolve reliably. While DiffusionDet has advanced the state-of-the-art through conditional denoising diffusion, its performance remains limited by local feature conditioning in context-dependent scenarios. We address this fundamental limitation by introducing Context-Aware Fusion (CAF), which leverages cross-attention mechanisms to integrate global scene context with local proposal features directly. The global context is generated using a separate dedicated encoder that captures comprehensive environmental information, enabling each object proposal to attend to scene-level understanding. Our framework significantly enhances the generative detection paradigm by enabling each object proposal to attend to comprehensive environmental information. Experimental results demonstrate an improvement over state-of-the-art models on the CarDD benchmark, establishing new performance benchmarks for context-aware object detection in fine-grained domains",
-          "Scholar articles": "C-DiffDet+: Fusing Global Scene Context with Generative Denoising for High-Fidelity Object Detection AZ Sellam, I Benaissa, SE Bekhouche, A Hadid… - 2025 Related articles C-DiffDet+: Fusing Global Scene Context with Generative Denoising for High-Fidelity Object Detection * A Zakaria Sellam, I Benaissa, S Eddine Bekhouche… - arXiv e-prints, 2025 Related articles"
-        },
-        "pdfUrl": null,
-        "detailsFetched": true
-      },
-      "abstractLabel": "Abstract",
-      "abstract": "Fine-grained object detection in challenging visual domains, such as vehicle damage assessment, presents a formidable challenge even for human experts to resolve reliably. While DiffusionDet has advanced the state-of-the-art through conditional denoising diffusion, its performance remains limited by local feature conditioning in context-dependent scenarios. We address this fundamental limitation by introducing Context-Aware Fusion (CAF), which leverages cross-attention mechanisms to integrate global scene context with local proposal features directly. The global context is generated using a separate dedicated encoder that captures comprehensive environmental information, enabling each object proposal to attend to scene-level understanding. Our framework significantly enhances the generative detection paradigm by enabling each object proposal to attend to comprehensive environmental information. Experimental results demonstrate an improvement over state-of-the-art models on the CarDD benchmark, establishing new performance benchmarks for context-aware object detection in fine-grained domains",
-      "bibtex": "@misc{Sellam2025CDiffDet,\n  title  = {C-DiffDet+: Fusing Global Scene Context with Generative Denoising for High-Fidelity Object Detection},\n  author = {Abdellah Zakaria Sellam and Ilyes Benaissa and Salah Eddine Bekhouche and Abdenour Hadid and Vito Renó and Cosimo Distante},\n  year   = {2025},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:ZHo1McVdvXMC}\n}"
     },
     {
       "id": "deformable-transformer-based-object-detection-for-robust-perception-in-a",
@@ -1533,6 +1673,64 @@
       "abstractLabel": "Abstract",
       "abstract": "Pedestrian Attribute Recognition (PAR) involves predicting fine-grained attributes such as clothing color, gender, and accessories from pedestrian imagery, yet is hindered by severe class imbalance, intricate attribute co-dependencies, and domain shifts. We introduce VLM-PAR, a modular vision-language framework built on frozen SigLIP 2 multilingual encoders. By first aligning image and prompt embeddings via refining visual features through a compact cross-attention fusion, VLM-PAR achieves significant accuracy improvement on the highly imbalanced PA100K benchmark, setting a new state-of-the-art performance, while also delivering significant gains in mean accuracy across PETA and Market-1501 benchmarks. These results underscore the efficacy of integrating large-scale vision-language pretraining with targeted cross-modal refinement to overcome imbalance and generalization challenges in PAR.",
       "bibtex": "@misc{Sellam2025VLMPAR,\n  title  = {VLM-PAR: A Vision Language Model for Pedestrian Attribute Recognition},\n  author = {Abdellah Zakaria Sellam and Salah Eddine Bekhouche and Fadi Dornaika and Cosimo Distante and Abdenour Hadid},\n  journal= {arXiv preprint arXiv:2512.22217},\n  year   = {2025},\n  eprint = {2512.22217},\n  archivePrefix = {arXiv},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:EUQCXRtRnyEC}\n}"
+    },
+    {
+      "id": "yolo-self-driving-perception",
+      "year": 2025,
+      "topic": "vision",
+      "type": "Conference paper",
+      "title": "Enhancing Perception in Self-Driving Vehicles with an Efficient 2D YOLO-Based Object Detector",
+      "authors": [
+        {
+          "name": "Chahira Kezzal"
+        },
+        {
+          "name": "Selsabil Benderradji"
+        },
+        {
+          "name": "Azeddine Benlamoudi"
+        },
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Abdelmalik Taleb-Ahmed"
+        }
+      ],
+      "venue": "1st National Conference on Artificial Intelligence and Digital Transition (CAIDT'2025), Kasdi Merbah University, Ouargla, Algeria, 2025",
+      "links": [],
+      "metadataStatus": "profile-record",
+      "bibtex": "@inproceedings{kezzal2025enhancing,\n  title = {Enhancing Perception in Self-Driving Vehicles with an Efficient 2D YOLO-Based Object Detector},\n  author = {Chahira Kezzal and Selsabil Benderradji and Azeddine Benlamoudi and Salah Eddine Bekhouche and Abdelmalik Taleb-Ahmed},\n  booktitle = {1st National Conference on Artificial Intelligence and Digital Transition (CAIDT'2025), Kasdi Merbah University, Ouargla, Algeria},\n  year = {2025}\n}"
+    },
+    {
+      "id": "yolov12-autonomous-driving",
+      "year": 2025,
+      "topic": "vision",
+      "type": "Conference paper",
+      "title": "YOLOv12 for Autonomous Driving",
+      "authors": [
+        {
+          "name": "Chahira Kezzal"
+        },
+        {
+          "name": "Selsabil Benderradji"
+        },
+        {
+          "name": "Azeddine Benlamoudi"
+        },
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Abdelmalik Taleb-Ahmed"
+        }
+      ],
+      "venue": "National Conference on Innovation in Data Engineering and AI Science (IDEAS'2025), USTO-MB, Oran, Algeria, 2025",
+      "links": [],
+      "metadataStatus": "profile-record",
+      "bibtex": "@inproceedings{kezzal2025yolov12,\n  title = {YOLOv12 for Autonomous Driving},\n  author = {Chahira Kezzal and Selsabil Benderradji and Azeddine Benlamoudi and Salah Eddine Bekhouche and Abdelmalik Taleb-Ahmed},\n  booktitle = {National Conference on Innovation in Data Engineering and AI Science (IDEAS'2025), USTO-MB, Oran, Algeria},\n  year = {2025}\n}"
     },
     {
       "id": "msdnn-age",
@@ -1732,54 +1930,6 @@
       "bibtex": "@inproceedings{Rahmani2024AdvancingRoad,\n  title  = {Advancing Road Safety: A CNN-Based Semi-Supervised Learning Approach for Drivers' Drowsiness Detection},\n  author = {Chahrazad Rahmani and Azeddine Benlamoudi and Salah Eddine Bekhouche and Yazid Bounab and Djamel Samai and Fadi Dornaika},\n  booktitle= {2024 1st International Conference on Electrical, Computer, Telecommunication and Energy Technologies (ECTE-Tech)},\n  pages  = {1-6},\n  publisher= {IEEE},\n  year   = {2024},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:J_g5lzvAfSwC}\n}"
     },
     {
-      "id": "devices-methods-and-computer-programs-for-virtual-eyeglasses-try-on",
-      "year": 2024,
-      "topic": "other",
-      "type": "Patent",
-      "title": "Devices, methods and computer programs for virtual eyeglasses try-on",
-      "authors": [
-        {
-          "name": "L NIU"
-        },
-        {
-          "name": "MEN ZIGHEM"
-        },
-        {
-          "name": "SE BEKHOUCHE",
-          "highlight": true
-        }
-      ],
-      "venue": "WO Patent WO2024037722A1 , 2024",
-      "links": [
-        {
-          "label": "Scholar",
-          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:pqnbT2bcN3wC",
-          "primary": true
-        }
-      ],
-      "metadataStatus": "scholar-detail",
-      "scholar": {
-        "profileId": "IiMXAxUAAAAJ",
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:pqnbT2bcN3wC",
-        "authors": "L NIU, MEN ZIGHEM, SE BEKHOUCHE",
-        "authorsTruncated": false,
-        "venue": "WO Patent WO2024037722A1 , 2024",
-        "year": 2024,
-        "citations": 0,
-        "citedByUrl": null,
-        "details": {
-          "Inventors": "Longchuan NIU, Mohammed-En-Nadhir ZIGHEM, Salah Eddine BEKHOUCHE",
-          "Publication date": "2024/2/22",
-          "Patent office": "WO",
-          "Patent number": "WO2024037722A1",
-          "Application number": "PCT/EP2022/073166"
-        },
-        "pdfUrl": null,
-        "detailsFetched": true
-      },
-      "bibtex": "@misc{NIU2024Devicesmethods,\n  title  = {Devices, methods and computer programs for virtual eyeglasses try-on},\n  author = {L NIU and MEN ZIGHEM and SE BEKHOUCHE},\n  year   = {2024},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:pqnbT2bcN3wC}\n}"
-    },
-    {
       "id": "kinship-verification-from-text-towards-discovering-subtitle-textual-feat",
       "year": 2024,
       "topic": "vision",
@@ -1827,6 +1977,41 @@
       "abstractLabel": "Abstract",
       "abstract": "The objective of kinship verification is to assess whether two individuals are biologically related or not. Previous research has primarily focused on determining kinship from facial patterns and movements, voice, or human gait. In this paper, we explore for the first time in the literature the problem of kinship verification from text. This is a very timely topic given the emergence of generative artificial intelligence and large language models. Our main hypothesis is that two family members inherit and share subtitle textual features that can be seen in the way of writing. The subtle features can be related to genes, culture, experience etc. To address this problem, we propose a Siamese-based BERT transformer incorporating two novel modules, namely Attention and Fusion. The experiments show promising results on the role textual information in kinship verification.",
       "bibtex": "@inproceedings{Bekhouche2024KinshipVerification,\n  title  = {Kinship Verification from Text: Towards Discovering Subtitle Textual Features Shared by Family Members using Large Language Models},\n  author = {Salah Eddine Bekhouche and Abdenour Hadid},\n  booktitle= {2024 IEEE 6th International Conference on AI Circuits and Systems (AICAS)},\n  pages  = {507-511},\n  publisher= {IEEE},\n  year   = {2024},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:RGFaLdJalmkC}\n}"
+    },
+    {
+      "id": "swin-drowsiness",
+      "year": 2024,
+      "topic": "vision",
+      "type": "Conference paper",
+      "title": "Driver Drowsiness Detection Using Swin Transformer Model",
+      "authors": [
+        {
+          "name": "Chahrazad Rahmani"
+        },
+        {
+          "name": "Azeddine Benlamoudi"
+        },
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Khaled Bensid"
+        },
+        {
+          "name": "Djamel Samai"
+        },
+        {
+          "name": "Fadi Dornaika"
+        },
+        {
+          "name": "Abdelmalik Taleb-Ahmed"
+        }
+      ],
+      "venue": "8th IEEE International Conference on Image and Signal Processing and their Applications (ISPA 2024), Biskra, Algeria",
+      "links": [],
+      "metadataStatus": "profile-record",
+      "bibtex": "@inproceedings{rahmani2024swin,\n  title = {Driver Drowsiness Detection Using Swin Transformer Model},\n  author = {Chahrazad Rahmani and Azeddine Benlamoudi and Salah Eddine Bekhouche and Khaled Bensid and Djamel Samai and Fadi Dornaika and Abdelmalik Taleb-Ahmed},\n  booktitle = {8th IEEE International Conference on Image and Signal Processing and their Applications (ISPA 2024), Biskra, Algeria},\n  year = {2024}\n}"
     },
     {
       "id": "driver-drowsiness",
@@ -3216,7 +3401,7 @@
       "year": 2018,
       "topic": "vision",
       "type": "Conference paper",
-      "title": "Discriminant analysis for facial verification using color images",
+      "title": "Discriminant Analysis for Facial Kinship Verification using Color Images",
       "authors": [
         {
           "name": "A Chergui"
@@ -3235,7 +3420,7 @@
           "name": "F Bougourzi"
         }
       ],
-      "venue": "Proc. First Int. Conf. Electr. Eng , 2018",
+      "venue": "Second International Conference on Electrical Engineering (ICEEB'18), University of Biskra, 2018",
       "links": [
         {
           "label": "Scholar",
@@ -3326,6 +3511,70 @@
         "detailsFetched": true
       },
       "bibtex": "@article{Chergui2018Robustkinship,\n  title  = {Robust kinship verification using local descriptors},\n  author = {A Chergui and S Ouchtati and J Sequeira and SE Bekhouche and Hichem Telli},\n  journal= {Proc. Third Int. Conf. Adv. Technol. and Electr. Eng},\n  year   = {2018},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:4JMBOYKVnBMC}\n}"
+    },
+    {
+      "id": "scaled-subsense-iceeb2018",
+      "year": 2018,
+      "topic": "vision",
+      "type": "Conference paper",
+      "title": "Background Subtraction Using a Scaled SuBSENSE",
+      "authors": [
+        {
+          "name": "Ihssane Houhou"
+        },
+        {
+          "name": "Athmane Zitouni"
+        },
+        {
+          "name": "Yassine Ruichek"
+        },
+        {
+          "name": "Fatma Gouizi"
+        },
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Abdelmalik Taleb-Ahmed"
+        }
+      ],
+      "venue": "Second International Conference on Electrical Engineering (ICEEB'18), University of Biskra, 2018",
+      "links": [],
+      "metadataStatus": "profile-record",
+      "bibtex": "@inproceedings{houhou2018subsense,\n  title = {Background Subtraction Using a Scaled SuBSENSE},\n  author = {Ihssane Houhou and Athmane Zitouni and Yassine Ruichek and Fatma Gouizi and Salah Eddine Bekhouche and Abdelmalik Taleb-Ahmed},\n  booktitle = {Second International Conference on Electrical Engineering (ICEEB'18), University of Biskra},\n  year = {2018}\n}"
+    },
+    {
+      "id": "scaled-subsense-iccee2018",
+      "year": 2018,
+      "topic": "vision",
+      "type": "Conference paper",
+      "title": "Background Subtraction Using a Scaled SuBSENSE",
+      "authors": [
+        {
+          "name": "Ihssane Houhou"
+        },
+        {
+          "name": "Athmane Zitouni"
+        },
+        {
+          "name": "Yassine Ruichek"
+        },
+        {
+          "name": "Fatma Gouizi"
+        },
+        {
+          "name": "Salah Eddine Bekhouche",
+          "highlight": true
+        },
+        {
+          "name": "Abdelmalik Taleb-Ahmed"
+        }
+      ],
+      "venue": "International Conference on Communications and Electrical Engineering (ICCEE2018), El Oued, Algeria",
+      "links": [],
+      "metadataStatus": "profile-record",
+      "bibtex": "@inproceedings{houhou2018subsenseiccee,\n  title = {Background Subtraction Using a Scaled SuBSENSE},\n  author = {Ihssane Houhou and Athmane Zitouni and Yassine Ruichek and Fatma Gouizi and Salah Eddine Bekhouche and Abdelmalik Taleb-Ahmed},\n  booktitle = {International Conference on Communications and Electrical Engineering (ICCEE2018), El Oued, Algeria},\n  year = {2018}\n}"
     },
     {
       "id": "a-competition-on-generalized-software-based-face-presentation-attack-det",
@@ -3652,14 +3901,14 @@
       "year": 2017,
       "topic": "vision",
       "type": "Thesis",
-      "title": "Facial Soft Biometrics: Extracting demographic traits",
+      "title": "Facial Soft Biometrics: Extracting Demographic Traits",
       "authors": [
         {
           "name": "Salah Eddine BEKHOUCHE",
           "highlight": true
         }
       ],
-      "venue": "Faculté des sciences et technologies , 2017",
+      "venue": "PhD thesis in Signals and Communications, University of Biskra, 2017",
       "links": [
         {
           "label": "PDF",
@@ -4304,104 +4553,6 @@
       "abstractLabel": "Abstract",
       "abstract": "Besides the recognition task, todays biometric systems need to cope with additional problem: spoofing attacks, like presenting a photo of a person (client) to camera. We study in this paper an anti-spoofing solution for distinguishing between’live’and’fake’faces. In our approach we focused in face detection using Viola-Jones algorithm and Active Shape Models with Stasm for locating landmarks. Then, we apply Local Binary Patterns (LBP) operator to extract the features in each region of the image. Finally, we use a nonlinear Support Vector Machine (SVM) classifier with kernel function for determining whether the input image corresponds to a live face or not. Our experimental analysis on a publicly available database NUAA, showed excellent results compared to existing methods.",
       "bibtex": "@article{Benlamoudi2015Facespoofing,\n  title  = {Face spoofing detection from single images using active shape models with stasm and lbp},\n  author = {Azeddine Benlamoudi and Djamel Samai and Abdelkrim Ouafi and Abdelmalik Taleb-Ahmed and Salah Eddine Bekhouche and Abdenour Hadid},\n  journal= {Proceeding of the Troisime Conference Internationale Sur La Vision Artificielle CVA 2015},\n  year   = {2015},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:KlAtU1dfN6UC}\n}"
-    },
-    {
-      "id": "realisation-dun-oscilloscope-numerique-portatif-a-affichage-sur-ecran-pc",
-      "year": 2013,
-      "topic": "other",
-      "type": "Thesis",
-      "title": "Réalisation d’un oscilloscope numérique portatif à affichage sur écran PC via le port USB",
-      "authors": [
-        {
-          "name": "Salah Eddine Bekhouche",
-          "highlight": true
-        }
-      ],
-      "venue": "Université de Biskra , 2013",
-      "links": [
-        {
-          "label": "Scholar",
-          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:ZeXyd9-uunAC",
-          "primary": true
-        }
-      ],
-      "metadataStatus": "scholar-detail",
-      "scholar": {
-        "profileId": "IiMXAxUAAAAJ",
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:ZeXyd9-uunAC",
-        "authors": "Salah Eddine Bekhouche",
-        "authorsTruncated": false,
-        "venue": "Université de Biskra , 2013",
-        "year": 2013,
-        "citations": 0,
-        "citedByUrl": null,
-        "details": {
-          "Authors": "Salah Eddine Bekhouche",
-          "Publication date": "2013/6",
-          "Institution": "Université de Biskra",
-          "Scholar articles": "Réalisation d’un oscilloscope numérique portatif à affichage sur écran PC via le port USB * SE Bekhouche Related articles"
-        },
-        "pdfUrl": null,
-        "detailsFetched": true
-      },
-      "bibtex": "@misc{Bekhouche2013Ralisation,\n  title  = {Réalisation d’un oscilloscope numérique portatif à affichage sur écran PC via le port USB},\n  author = {Salah Eddine Bekhouche},\n  year   = {2013},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:ZeXyd9-uunAC}\n}"
-    },
-    {
-      "id": "kinship-verification-through-facial-images-using-cnn-based-features-kins",
-      "year": "n.d.",
-      "topic": "vision",
-      "type": "Publication",
-      "title": "Kinship Verification Through Facial Images Using CNN-Based Features Kinship Verification Through Facial Images Using CNN-Based Features",
-      "authors": [
-        {
-          "name": "Abdelhakim Chergui"
-        },
-        {
-          "name": "Salim Ouchtati"
-        },
-        {
-          "name": "Sébastien Mavromatis"
-        },
-        {
-          "name": "Salah Eddine Bekhouche",
-          "highlight": true
-        },
-        {
-          "name": "Mohamed Lashab"
-        },
-        {
-          "name": "Jean Sequeira"
-        }
-      ],
-      "venue": "Venue not listed on Google Scholar",
-      "links": [
-        {
-          "label": "Scholar",
-          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:_Qo2XoVZTnwC",
-          "primary": true
-        }
-      ],
-      "metadataStatus": "scholar-detail",
-      "scholar": {
-        "profileId": "IiMXAxUAAAAJ",
-        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:_Qo2XoVZTnwC",
-        "authors": "Abdelhakim Chergui, Salim Ouchtati, Sébastien Mavromatis, Salah Eddine Bekhouche, Mohamed Lashab, Jean Sequeira",
-        "authorsTruncated": false,
-        "venue": "",
-        "year": "n.d.",
-        "citations": 0,
-        "citedByUrl": null,
-        "details": {
-          "Authors": "Abdelhakim Chergui, Salim Ouchtati, Sébastien Mavromatis, Salah Eddine Bekhouche, Mohamed Lashab, Jean Sequeira",
-          "Description": "The use of facial images in the kinship verification is a challenging research problem in soft biometrics and computer vision. In our work, we present a kinship verification system that starts with pair of facial images of the child and parent, then as a final result is determine whether two persons have a kin relation or not. our approach contains five steps as follows:(i) the face preprocessing step to get aligned and cropped facial images of the pair (ii), extracting deep features based on the deep learning model called Visual Geometry Group (VGG) Face,(iii) applying our proposed pair feature representation function alongside with a features normalization,(iv) the use of Fisher Score (FS) to select the best discriminative features,(v) decide whether there is a kinship or not based on the Support Vector Machine (SVM) classifier. We conducted several experiments to demonstrate the effectiveness of our approach that we …",
-          "Scholar articles": "Kinship Verification Through Facial Images Using CNN-Based Features Kinship Verification Through Facial Images Using CNN-Based Features A Chergui, S Ouchtati, S Mavromatis, SE Bekhouche… Related articles"
-        },
-        "pdfUrl": null,
-        "detailsFetched": true
-      },
-      "abstractLabel": "Abstract",
-      "abstract": "The use of facial images in the kinship verification is a challenging research problem in soft biometrics and computer vision. In our work, we present a kinship verification system that starts with pair of facial images of the child and parent, then as a final result is determine whether two persons have a kin relation or not. our approach contains five steps as follows:(i) the face preprocessing step to get aligned and cropped facial images of the pair (ii), extracting deep features based on the deep learning model called Visual Geometry Group (VGG) Face,(iii) applying our proposed pair feature representation function alongside with a features normalization,(iv) the use of Fisher Score (FS) to select the best discriminative features,(v) decide whether there is a kinship or not based on the Support Vector Machine (SVM) classifier. We conducted several experiments to demonstrate the effectiveness of our approach that we …",
-      "bibtex": "@misc{CherguiNDKinshipVerification,\n  title  = {Kinship Verification Through Facial Images Using CNN-Based Features Kinship Verification Through Facial Images Using CNN-Based Features},\n  author = {Abdelhakim Chergui and Salim Ouchtati and Sébastien Mavromatis and Salah Eddine Bekhouche and Mohamed Lashab and Jean Sequeira},\n  url    = {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IiMXAxUAAAAJ&pagesize=100&citation_for_view=IiMXAxUAAAAJ:_Qo2XoVZTnwC}\n}"
     }
   ],
   "scholarProfile": {

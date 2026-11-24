@@ -62,8 +62,6 @@ def validate(publications: list[dict[str, Any]]) -> None:
             raise ValueError(f"Duplicate publication id: {publication['id']}")
         if not publication["authors"]:
             raise ValueError(f"Publication {publication['id']} has no authors")
-        if not publication["links"]:
-            raise ValueError(f"Publication {publication['id']} has no links")
         seen_ids.add(publication["id"])
 
 

@@ -11,17 +11,17 @@
     <meta name="theme-color" content="#f4f2eb" />
     <meta name="color-scheme" content="light dark" />
 
-    <title>Publications — Salah Eddine Bekhouche</title>
-    <link rel="canonical" href="https://bekhouche.github.io/publications.html" />
+    <title>Publications | Salah Eddine Bekhouche</title>
+    <link rel="canonical" href="https://salah.bekhouche.com/publications.html" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%231b5e52%22/><text x=%2250%22 y=%2267%22 text-anchor=%22middle%22 font-size=%2252%22 fill=%22white%22 font-family=%22Arial%22>SB</text></svg>" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Publications — Salah Eddine Bekhouche" />
+    <meta property="og:title" content="Publications | Salah Eddine Bekhouche" />
     <meta
       property="og:description"
       content="Research papers in computer vision, facial analysis, medical imaging, remote sensing, and machine learning."
     />
-    <meta property="og:url" content="https://bekhouche.github.io/publications.html" />
+    <meta property="og:url" content="https://salah.bekhouche.com/publications.html" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,7 +96,7 @@
       <section class="section-shell" aria-labelledby="publication-list-title">
         <div class="library-toolbar">
           <p class="library-count" id="publication-list-title">
-            Showing <strong>66</strong> publications
+            Showing <strong>71</strong> publications
           </p>
           <div class="library-filters" aria-label="Filter publications">
             <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
@@ -109,6 +109,58 @@
 
         <div class="library-list">
           <!-- PUBLICATIONS:START -->
+          <article class="library-item reveal" id="crosslidar" data-topic="vision">
+            <div class="library-year">2027</div>
+            <div>
+              <span class="library-type">Conference · LiDAR generation</span>
+              <h2>CrossLiDAR: Controllable Multi-Sensor LiDAR Sequence Generation</h2>
+              <p class="library-authors">
+                Khanh Nguyen, Thomas Walker, Hichem Telli, Carlos de la Torre-Ortiz, Stefano Fiorini, <strong>Salah Eddine Bekhouche</strong>, Mohammed-En-Nadhir Zighem, Wassim Swaileh, and Tinghuai Wang
+              </p>
+              <p class="library-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027), accepted</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>Abstract</h3>
+                  <p class="paper-abstract">
+                    High-fidelity LiDAR simulation remains a bottleneck for scalable development and validation
+                    of autonomous systems. Existing generators can synthesize realistic scans, but they are
+                    typically constrained to a single sensor configuration, offer limited control over structure
+                    and geometry, and drift in long-horizon 4D generation. We present CrossLiDAR, a unified
+                    transformer-based framework capable of generating controllable and spatio-temporally
+                    consistent multi-sensor LiDAR sequences. Our approach leverages a rectified flow objective
+                    with a Multi-Modal Diffusion Transformer (MM-DiT) backbone, within a compact latent space of
+                    range images. To support multiple LiDAR sensors, an Inter-sensor Module enables interaction
+                    across sensors, while a ControlNet-style branch provides structural conditioning (e.g., BEV
+                    priors or 3D bounding boxes). For modeling the temporal consistency, CrossLiDAR generates
+                    short N-frame sequences and extends them autoregressively to improve long-horizon coherence.
+                    Our model significantly outperforms state-of-the-art baselines, achieving an average
+                    improvement of 29.56% in JSD and 15.36% in MMD evaluated on nuScenes and the Waymo Dataset.
+                    CrossLiDAR bridges the gap to modern autonomous-driving simulation by enabling
+                    calibration-consistent multi-sensor LiDAR rollouts over long horizons for controllable,
+                    scenario-based testing.
+                  </p>
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@inproceedings{nguyen2027crosslidar,
+  title = {CrossLiDAR: Controllable Multi-Sensor LiDAR Sequence Generation},
+  author = {Khanh Nguyen and Thomas Walker and Hichem Telli and Carlos de la Torre-Ortiz and Stefano Fiorini and Salah Eddine Bekhouche and Mohammed-En-Nadhir Zighem and Wassim Swaileh and Tinghuai Wang},
+  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year = {2027},
+  eprint = {2611.11131},
+  archivePrefix = {arXiv}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+              <a class="action-link primary" href="https://arxiv.org/pdf/2611.11131">PDF</a>
+              <a class="action-link" href="https://arxiv.org/abs/2611.11131">arXiv</a>
+            </div>
+          </article>
+
           <article class="library-item reveal" id="hallutruthqa" data-topic="other">
             <div class="library-year">2026</div>
             <div>
@@ -685,6 +737,143 @@
             </div>
           </article>
 
+          <article class="library-item reveal" id="halluscoring-2026" data-topic="other">
+            <div class="library-year">2026</div>
+            <div>
+              <span class="library-type">Preprint · arXiv</span>
+              <h2>Halluscoring 2026: The First Shared Task on LLM Hallucination Detection and Answer Verification</h2>
+              <p class="library-authors">
+                Aisha Alansari, Abdessalam Bouchekif, Ahmed Hasanaath, <strong>Salah Eddine Bekhouche</strong>, Malak Alkhorasani, Mohammed-En-Nadhir Zighem, Saad Ezzini, Hichem Telli, Hend Suliman Al-Khalifa, Muhammad Abdul-Mageed, Abdenour Hadid, and Hamzah Luqman
+              </p>
+              <p class="library-venue">arXiv preprint arXiv:2609.38355, 2026</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>Abstract</h3>
+                  <p class="paper-abstract">
+                    We present HalluScoring 2026, a shared task for evaluating hallucination detection and
+                    factual verification in Arabic question answering under challenging generalization settings.
+                    Its four subtasks are organized into two tasks. Task 1 evaluates binary hallucination
+                    detection, considering generalization to unseen questions (Subtask 1.1) and responses
+                    generated by unseen LLMs (Subtask 1.2). Task 2 extends the evaluation beyond detection by
+                    requiring the systems to additionally identify the correct factual answer from six related
+                    candidates, covering Islamic knowledge (Subtask 2.1) and general knowledge (Subtask 2.2).
+                    The shared task is based on two Arabic datasets: HalluScore and HalluTruthQA. A total of 13
+                    teams participated in the shared task, ten of which submitted system description papers. The
+                    results of Task 1 demonstrate that hallucination detection remains challenging. On the Task
+                    1 test sets, the top-ranked systems achieved AUC-ROC scores of 0.7717 for Subtask 1.1
+                    (REGLAT) and 0.7670 for Subtask 1.2 (NAMAA). Under assisted evaluation, the highest combined
+                    detection and answer-selection scores for Subtasks 2.1 and 2.2 were 0.8824 and 0.8565,
+                    respectively.
+                  </p>
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@misc{alansari2026halluscoring,
+  title = {Halluscoring 2026: The First Shared Task on LLM Hallucination Detection and Answer Verification},
+  author = {Aisha Alansari and Abdessalam Bouchekif and Ahmed Hasanaath and Salah Eddine Bekhouche and Malak Alkhorasani and Mohammed-En-Nadhir Zighem and Saad Ezzini and Hichem Telli and Hend Suliman Al-Khalifa and Muhammad Abdul-Mageed and Abdenour Hadid and Hamzah Luqman},
+  howpublished = {arXiv},
+  year = {2026},
+  eprint = {2609.38355},
+  archivePrefix = {arXiv}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+              <a class="action-link primary" href="https://arxiv.org/pdf/2609.38355">PDF</a>
+              <a class="action-link" href="https://arxiv.org/abs/2609.38355">arXiv</a>
+            </div>
+          </article>
+
+          <article class="library-item reveal" id="hallutruthqa-4k" data-topic="other">
+            <div class="library-year">2026</div>
+            <div>
+              <span class="library-type">Preprint · arXiv</span>
+              <h2>HalluTruthQA-4K: A Fine-Grained Corpus and Annotation Process for Arabic Hallucination Detection and Truth Verification</h2>
+              <p class="library-authors">
+                <strong>Salah Eddine Bekhouche</strong>, Abdessalam Bouchekif, Hichem Telli, Mohammed-En-Nadhir Zighem, and Abdenour Hadid
+              </p>
+              <p class="library-venue">arXiv preprint arXiv:2608.03966, 2026</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>Abstract</h3>
+                  <p class="paper-abstract">
+                    Large language models can generate fluent answers, yet factual errors remain challenging to
+                    detect, localize, explain, and verify. Existing Arabic hallucination benchmarks typically
+                    focus on response-level judgments, with limited support for identifying the exact erroneous
+                    content, explaining why it is incorrect, or identifying the correct factual answer. We
+                    introduce HalluTruthQA-4K, an expert-annotated extension of the HalluTruthQA benchmark,
+                    expanding the corpus from 2,400 to 4,000 Arabic question answering (QA) instances across
+                    four knowledge-intensive domains: Islamic knowledge, history, science, and geography. Each
+                    instance contains an Arabic question, a modelgenerated response, a verified reference
+                    answer, and six candidate answers consisting of one correct answer and five plausible
+                    distractors. For hallucinated responses, the corpus additionally provides character-level
+                    hallucination spans and human-written explanations. The resulting corpus contains 1,789
+                    hallucinated and 2,211 non-hallucinated responses, with 2,419 annotated erroneous spans.
+                    These annotations support four main evaluation tasks: binary hallucination detection,
+                    hallucination span localization, explanation generation and evaluation, and multiple-choice
+                    factual verification (MCQ). We describe the corpus construction and quality-control process,
+                    including controlled response generation, expert annotation, independent verification, and
+                    adjudication. By providing multiple levels of factual error annotation within the same QA
+                    instances, HalluTruthQA-4K enables fine-grained evaluation of factual reliability in Arabic
+                    LLMs. The corpus is publicly available on Hugging Face
+                    (https://huggingface.co/datasets/Bekhouche/HalluTruthQA-4K).
+                  </p>
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@misc{bekhouche2026hallutruthqa4k,
+  title = {HalluTruthQA-4K: A Fine-Grained Corpus and Annotation Process for Arabic Hallucination Detection and Truth Verification},
+  author = {Salah Eddine Bekhouche and Abdessalam Bouchekif and Hichem Telli and Mohammed-En-Nadhir Zighem and Abdenour Hadid},
+  howpublished = {arXiv},
+  year = {2026},
+  eprint = {2608.03966},
+  archivePrefix = {arXiv}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+              <a class="action-link primary" href="https://arxiv.org/pdf/2608.03966">PDF</a>
+              <a class="action-link" href="https://arxiv.org/abs/2608.03966">arXiv</a>
+              <a class="action-link" href="https://huggingface.co/datasets/Bekhouche/HalluTruthQA-4K">Dataset</a>
+            </div>
+          </article>
+
+          <article class="library-item reveal" id="gas-turbine-emissions" data-topic="other">
+            <div class="library-year">2026</div>
+            <div>
+              <span class="library-type">Conference paper</span>
+              <h2>Machine Learning Model Comparison for Gas Turbine Emissions Prediction</h2>
+              <p class="library-authors">
+                Chahrazad Rahmani, Azeddine Benlamoudi, Fares Bennaceur, Chaira Kezzal, <strong>Salah Eddine Bekhouche</strong>, Yazid Bounab, and Djamel Samai
+              </p>
+              <p class="library-venue">2nd National Conference on Artificial Intelligence and Digital Transition (CAIDT&#x27;26), Kasdi Merbah University, Ouargla, Algeria, 2026</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@inproceedings{rahmani2026gasturbine,
+  title = {Machine Learning Model Comparison for Gas Turbine Emissions Prediction},
+  author = {Chahrazad Rahmani and Azeddine Benlamoudi and Fares Bennaceur and Chaira Kezzal and Salah Eddine Bekhouche and Yazid Bounab and Djamel Samai},
+  booktitle = {2nd National Conference on Artificial Intelligence and Digital Transition (CAIDT&#x27;26), Kasdi Merbah University, Ouargla, Algeria},
+  year = {2026}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+
+            </div>
+          </article>
+
           <article class="library-item reveal" id="lola-specvit" data-topic="remote">
             <div class="library-year">2025</div>
             <div>
@@ -942,12 +1131,12 @@
           <article class="library-item reveal" id="advancing-face-analysis-in-images-and-videos-age-estimation-and-drowsine" data-topic="vision">
             <div class="library-year">2025</div>
             <div>
-              <span class="library-type">Publication</span>
-              <h2>Advancing Face Analysis in Images and Videos: Age Estimation and Drowsiness Detection.</h2>
+              <span class="library-type">Thesis</span>
+              <h2>Advancing Face Analysis in Images and Videos: Age Estimation and Drowsiness Detection</h2>
               <p class="library-authors">
                 <strong>Salah Eddine Bekhouche</strong>
               </p>
-              <p class="library-venue">Venue not listed on Google Scholar</p>
+              <p class="library-venue">PhD thesis in Computer Engineering, University of the Basque Country, 2025</p>
               <details class="paper-details">
                 <summary>Abstract &amp; citation</summary>
                 <div class="paper-details-content">
@@ -1090,52 +1279,6 @@
             </div>
           </article>
 
-          <article class="library-item reveal" id="c-diffdet-fusing-global-scene-context-with-generative-denoising-for-high" data-topic="vision">
-            <div class="library-year">2025</div>
-            <div>
-              <span class="library-type">Publication</span>
-              <h2>C-DiffDet+: Fusing Global Scene Context with Generative Denoising for High-Fidelity Object Detection</h2>
-              <p class="library-authors">
-                Abdellah Zakaria Sellam, Ilyes Benaissa, <strong>Salah Eddine Bekhouche</strong>, Abdenour Hadid, Vito Renó, and Cosimo Distante
-              </p>
-              <p class="library-venue">Venue not listed on Google Scholar</p>
-              <details class="paper-details">
-                <summary>Abstract &amp; citation</summary>
-                <div class="paper-details-content">
-                  <h3>Abstract</h3>
-                  <p class="paper-abstract">
-                    Fine-grained object detection in challenging visual domains, such as vehicle damage
-                    assessment, presents a formidable challenge even for human experts to resolve reliably.
-                    While DiffusionDet has advanced the state-of-the-art through conditional denoising
-                    diffusion, its performance remains limited by local feature conditioning in
-                    context-dependent scenarios. We address this fundamental limitation by introducing
-                    Context-Aware Fusion (CAF), which leverages cross-attention mechanisms to integrate global
-                    scene context with local proposal features directly. The global context is generated using a
-                    separate dedicated encoder that captures comprehensive environmental information, enabling
-                    each object proposal to attend to scene-level understanding. Our framework significantly
-                    enhances the generative detection paradigm by enabling each object proposal to attend to
-                    comprehensive environmental information. Experimental results demonstrate an improvement
-                    over state-of-the-art models on the CarDD benchmark, establishing new performance benchmarks
-                    for context-aware object detection in fine-grained domains
-                  </p>
-                  <h3>BibTeX</h3>
-                  <div class="citation-box">
-                    <pre><code>@misc{Sellam2025CDiffDet,
-  title  = {C-DiffDet+: Fusing Global Scene Context with Generative Denoising for High-Fidelity Object Detection},
-  author = {Abdellah Zakaria Sellam and Ilyes Benaissa and Salah Eddine Bekhouche and Abdenour Hadid and Vito Renó and Cosimo Distante},
-  year   = {2025},
-  url    = {https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:ZHo1McVdvXMC}
-}</code></pre>
-                  </div>
-                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
-                </div>
-              </details>
-            </div>
-            <div class="library-actions">
-              <a class="action-link primary" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:ZHo1McVdvXMC">Scholar</a>
-            </div>
-          </article>
-
           <article class="library-item reveal" id="deformable-transformer-based-object-detection-for-robust-perception-in-a" data-topic="vision">
             <div class="library-year">2025</div>
             <div>
@@ -1275,6 +1418,66 @@
               <a class="action-link primary" href="https://arxiv.org/pdf/2512.22217">PDF</a>
               <a class="action-link" href="https://arxiv.org/abs/2512.22217">arXiv</a>
               <a class="action-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:EUQCXRtRnyEC">Scholar</a>
+            </div>
+          </article>
+
+          <article class="library-item reveal" id="yolo-self-driving-perception" data-topic="vision">
+            <div class="library-year">2025</div>
+            <div>
+              <span class="library-type">Conference paper</span>
+              <h2>Enhancing Perception in Self-Driving Vehicles with an Efficient 2D YOLO-Based Object Detector</h2>
+              <p class="library-authors">
+                Chahira Kezzal, Selsabil Benderradji, Azeddine Benlamoudi, <strong>Salah Eddine Bekhouche</strong>, and Abdelmalik Taleb-Ahmed
+              </p>
+              <p class="library-venue">1st National Conference on Artificial Intelligence and Digital Transition (CAIDT&#x27;2025), Kasdi Merbah University, Ouargla, Algeria, 2025</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@inproceedings{kezzal2025enhancing,
+  title = {Enhancing Perception in Self-Driving Vehicles with an Efficient 2D YOLO-Based Object Detector},
+  author = {Chahira Kezzal and Selsabil Benderradji and Azeddine Benlamoudi and Salah Eddine Bekhouche and Abdelmalik Taleb-Ahmed},
+  booktitle = {1st National Conference on Artificial Intelligence and Digital Transition (CAIDT&#x27;2025), Kasdi Merbah University, Ouargla, Algeria},
+  year = {2025}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+
+            </div>
+          </article>
+
+          <article class="library-item reveal" id="yolov12-autonomous-driving" data-topic="vision">
+            <div class="library-year">2025</div>
+            <div>
+              <span class="library-type">Conference paper</span>
+              <h2>YOLOv12 for Autonomous Driving</h2>
+              <p class="library-authors">
+                Chahira Kezzal, Selsabil Benderradji, Azeddine Benlamoudi, <strong>Salah Eddine Bekhouche</strong>, and Abdelmalik Taleb-Ahmed
+              </p>
+              <p class="library-venue">National Conference on Innovation in Data Engineering and AI Science (IDEAS&#x27;2025), USTO-MB, Oran, Algeria, 2025</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@inproceedings{kezzal2025yolov12,
+  title = {YOLOv12 for Autonomous Driving},
+  author = {Chahira Kezzal and Selsabil Benderradji and Azeddine Benlamoudi and Salah Eddine Bekhouche and Abdelmalik Taleb-Ahmed},
+  booktitle = {National Conference on Innovation in Data Engineering and AI Science (IDEAS&#x27;2025), USTO-MB, Oran, Algeria},
+  year = {2025}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+
             </div>
           </article>
 
@@ -1431,36 +1634,6 @@
             </div>
           </article>
 
-          <article class="library-item reveal" id="devices-methods-and-computer-programs-for-virtual-eyeglasses-try-on" data-topic="other">
-            <div class="library-year">2024</div>
-            <div>
-              <span class="library-type">Patent</span>
-              <h2>Devices, methods and computer programs for virtual eyeglasses try-on</h2>
-              <p class="library-authors">
-                L NIU, MEN ZIGHEM, and <strong>SE BEKHOUCHE</strong>
-              </p>
-              <p class="library-venue">WO Patent WO2024037722A1 , 2024</p>
-              <details class="paper-details">
-                <summary>Abstract &amp; citation</summary>
-                <div class="paper-details-content">
-                  <h3>BibTeX</h3>
-                  <div class="citation-box">
-                    <pre><code>@misc{NIU2024Devicesmethods,
-  title  = {Devices, methods and computer programs for virtual eyeglasses try-on},
-  author = {L NIU and MEN ZIGHEM and SE BEKHOUCHE},
-  year   = {2024},
-  url    = {https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:pqnbT2bcN3wC}
-}</code></pre>
-                  </div>
-                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
-                </div>
-              </details>
-            </div>
-            <div class="library-actions">
-              <a class="action-link primary" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:pqnbT2bcN3wC">Scholar</a>
-            </div>
-          </article>
-
           <article class="library-item reveal" id="kinship-verification-from-text-towards-discovering-subtitle-textual-feat" data-topic="vision">
             <div class="library-year">2024</div>
             <div>
@@ -1504,6 +1677,36 @@
             </div>
             <div class="library-actions">
               <a class="action-link primary" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:RGFaLdJalmkC">Scholar</a>
+            </div>
+          </article>
+
+          <article class="library-item reveal" id="swin-drowsiness" data-topic="vision">
+            <div class="library-year">2024</div>
+            <div>
+              <span class="library-type">Conference paper</span>
+              <h2>Driver Drowsiness Detection Using Swin Transformer Model</h2>
+              <p class="library-authors">
+                Chahrazad Rahmani, Azeddine Benlamoudi, <strong>Salah Eddine Bekhouche</strong>, Khaled Bensid, Djamel Samai, Fadi Dornaika, and Abdelmalik Taleb-Ahmed
+              </p>
+              <p class="library-venue">8th IEEE International Conference on Image and Signal Processing and their Applications (ISPA 2024), Biskra, Algeria</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@inproceedings{rahmani2024swin,
+  title = {Driver Drowsiness Detection Using Swin Transformer Model},
+  author = {Chahrazad Rahmani and Azeddine Benlamoudi and Salah Eddine Bekhouche and Khaled Bensid and Djamel Samai and Fadi Dornaika and Abdelmalik Taleb-Ahmed},
+  booktitle = {8th IEEE International Conference on Image and Signal Processing and their Applications (ISPA 2024), Biskra, Algeria},
+  year = {2024}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+
             </div>
           </article>
 
@@ -2517,11 +2720,11 @@
             <div class="library-year">2018</div>
             <div>
               <span class="library-type">Conference paper</span>
-              <h2>Discriminant analysis for facial verification using color images</h2>
+              <h2>Discriminant Analysis for Facial Kinship Verification using Color Images</h2>
               <p class="library-authors">
                 A Chergui, S Ouchtati, J Sequeira, <strong>SE Bekhouche</strong>, and F Bougourzi
               </p>
-              <p class="library-venue">Proc. First Int. Conf. Electr. Eng , 2018</p>
+              <p class="library-venue">Second International Conference on Electrical Engineering (ICEEB&#x27;18), University of Biskra, 2018</p>
               <details class="paper-details">
                 <summary>Abstract &amp; citation</summary>
                 <div class="paper-details-content">
@@ -2574,6 +2777,66 @@
             <div class="library-actions">
               <a class="action-link primary" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:4JMBOYKVnBMC">Scholar</a>
               <a class="action-link" href="https://scholar.google.com/scholar?oi=bibs&amp;hl=en&amp;cites=192121137472499710">Cited by 8</a>
+            </div>
+          </article>
+
+          <article class="library-item reveal" id="scaled-subsense-iceeb2018" data-topic="vision">
+            <div class="library-year">2018</div>
+            <div>
+              <span class="library-type">Conference paper</span>
+              <h2>Background Subtraction Using a Scaled SuBSENSE</h2>
+              <p class="library-authors">
+                Ihssane Houhou, Athmane Zitouni, Yassine Ruichek, Fatma Gouizi, <strong>Salah Eddine Bekhouche</strong>, and Abdelmalik Taleb-Ahmed
+              </p>
+              <p class="library-venue">Second International Conference on Electrical Engineering (ICEEB&#x27;18), University of Biskra, 2018</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@inproceedings{houhou2018subsense,
+  title = {Background Subtraction Using a Scaled SuBSENSE},
+  author = {Ihssane Houhou and Athmane Zitouni and Yassine Ruichek and Fatma Gouizi and Salah Eddine Bekhouche and Abdelmalik Taleb-Ahmed},
+  booktitle = {Second International Conference on Electrical Engineering (ICEEB&#x27;18), University of Biskra},
+  year = {2018}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+
+            </div>
+          </article>
+
+          <article class="library-item reveal" id="scaled-subsense-iccee2018" data-topic="vision">
+            <div class="library-year">2018</div>
+            <div>
+              <span class="library-type">Conference paper</span>
+              <h2>Background Subtraction Using a Scaled SuBSENSE</h2>
+              <p class="library-authors">
+                Ihssane Houhou, Athmane Zitouni, Yassine Ruichek, Fatma Gouizi, <strong>Salah Eddine Bekhouche</strong>, and Abdelmalik Taleb-Ahmed
+              </p>
+              <p class="library-venue">International Conference on Communications and Electrical Engineering (ICCEE2018), El Oued, Algeria</p>
+              <details class="paper-details">
+                <summary>Abstract &amp; citation</summary>
+                <div class="paper-details-content">
+                  <h3>BibTeX</h3>
+                  <div class="citation-box">
+                    <pre><code>@inproceedings{houhou2018subsenseiccee,
+  title = {Background Subtraction Using a Scaled SuBSENSE},
+  author = {Ihssane Houhou and Athmane Zitouni and Yassine Ruichek and Fatma Gouizi and Salah Eddine Bekhouche and Abdelmalik Taleb-Ahmed},
+  booktitle = {International Conference on Communications and Electrical Engineering (ICCEE2018), El Oued, Algeria},
+  year = {2018}
+}</code></pre>
+                  </div>
+                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
+                </div>
+              </details>
+            </div>
+            <div class="library-actions">
+
             </div>
           </article>
 
@@ -2726,11 +2989,11 @@
             <div class="library-year">2017</div>
             <div>
               <span class="library-type">Thesis</span>
-              <h2>Facial Soft Biometrics: Extracting demographic traits</h2>
+              <h2>Facial Soft Biometrics: Extracting Demographic Traits</h2>
               <p class="library-authors">
                 <strong>Salah Eddine BEKHOUCHE</strong>
               </p>
-              <p class="library-venue">Faculté des sciences et technologies , 2017</p>
+              <p class="library-venue">PhD thesis in Signals and Communications, University of Biskra, 2017</p>
               <details class="paper-details">
                 <summary>Abstract &amp; citation</summary>
                 <div class="paper-details-content">
@@ -3180,79 +3443,6 @@
               <a class="action-link" href="https://scholar.google.com/scholar?oi=bibs&amp;hl=en&amp;cites=7756317729807551507">Cited by 15</a>
             </div>
           </article>
-
-          <article class="library-item reveal" id="realisation-dun-oscilloscope-numerique-portatif-a-affichage-sur-ecran-pc" data-topic="other">
-            <div class="library-year">2013</div>
-            <div>
-              <span class="library-type">Thesis</span>
-              <h2>Réalisation d’un oscilloscope numérique portatif à affichage sur écran PC via le port USB</h2>
-              <p class="library-authors">
-                <strong>Salah Eddine Bekhouche</strong>
-              </p>
-              <p class="library-venue">Université de Biskra , 2013</p>
-              <details class="paper-details">
-                <summary>Abstract &amp; citation</summary>
-                <div class="paper-details-content">
-                  <h3>BibTeX</h3>
-                  <div class="citation-box">
-                    <pre><code>@misc{Bekhouche2013Ralisation,
-  title  = {Réalisation d’un oscilloscope numérique portatif à affichage sur écran PC via le port USB},
-  author = {Salah Eddine Bekhouche},
-  year   = {2013},
-  url    = {https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:ZeXyd9-uunAC}
-}</code></pre>
-                  </div>
-                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
-                </div>
-              </details>
-            </div>
-            <div class="library-actions">
-              <a class="action-link primary" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:ZeXyd9-uunAC">Scholar</a>
-            </div>
-          </article>
-
-          <article class="library-item reveal" id="kinship-verification-through-facial-images-using-cnn-based-features-kins" data-topic="vision">
-            <div class="library-year">n.d.</div>
-            <div>
-              <span class="library-type">Publication</span>
-              <h2>Kinship Verification Through Facial Images Using CNN-Based Features Kinship Verification Through Facial Images Using CNN-Based Features</h2>
-              <p class="library-authors">
-                Abdelhakim Chergui, Salim Ouchtati, Sébastien Mavromatis, <strong>Salah Eddine Bekhouche</strong>, Mohamed Lashab, and Jean Sequeira
-              </p>
-              <p class="library-venue">Venue not listed on Google Scholar</p>
-              <details class="paper-details">
-                <summary>Abstract &amp; citation</summary>
-                <div class="paper-details-content">
-                  <h3>Abstract</h3>
-                  <p class="paper-abstract">
-                    The use of facial images in the kinship verification is a challenging research problem in
-                    soft biometrics and computer vision. In our work, we present a kinship verification system
-                    that starts with pair of facial images of the child and parent, then as a final result is
-                    determine whether two persons have a kin relation or not. our approach contains five steps
-                    as follows:(i) the face preprocessing step to get aligned and cropped facial images of the
-                    pair (ii), extracting deep features based on the deep learning model called Visual Geometry
-                    Group (VGG) Face,(iii) applying our proposed pair feature representation function alongside
-                    with a features normalization,(iv) the use of Fisher Score (FS) to select the best
-                    discriminative features,(v) decide whether there is a kinship or not based on the Support
-                    Vector Machine (SVM) classifier. We conducted several experiments to demonstrate the
-                    effectiveness of our approach that we …
-                  </p>
-                  <h3>BibTeX</h3>
-                  <div class="citation-box">
-                    <pre><code>@misc{CherguiNDKinshipVerification,
-  title  = {Kinship Verification Through Facial Images Using CNN-Based Features Kinship Verification Through Facial Images Using CNN-Based Features},
-  author = {Abdelhakim Chergui and Salim Ouchtati and Sébastien Mavromatis and Salah Eddine Bekhouche and Mohamed Lashab and Jean Sequeira},
-  url    = {https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:_Qo2XoVZTnwC}
-}</code></pre>
-                  </div>
-                  <button class="action-link copy-citation" type="button">Copy BibTeX</button>
-                </div>
-              </details>
-            </div>
-            <div class="library-actions">
-              <a class="action-link primary" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=IiMXAxUAAAAJ&amp;pagesize=100&amp;citation_for_view=IiMXAxUAAAAJ:_Qo2XoVZTnwC">Scholar</a>
-            </div>
-          </article>
           <!-- PUBLICATIONS:END -->
         </div>
       </section>
@@ -3265,12 +3455,13 @@
             <span class="wordmark-mark">SB</span>
             <span class="wordmark-name">Salah Bekhouche</span>
           </a>
-          <p>Senior AI &amp; Computer Vision Researcher</p>
+          <p>Senior AI Scientist and ML Systems Engineer</p>
         </div>
         <div class="footer-links">
           <a href="https://github.com/Bekhouche">GitHub ↗</a>
           <a href="https://www.linkedin.com/in/bekhouche/">LinkedIn ↗</a>
           <a href="https://scholar.google.com/citations?user=IiMXAxUAAAAJ&hl=en">Scholar ↗</a>
+          <a href="https://orcid.org/0000-0001-5538-7407">ORCID ↗</a>
           <a href="https://huggingface.co/Bekhouche">Hugging Face ↗</a>
         </div>
         <p class="copyright">© <span id="year">2026</span> Salah Eddine Bekhouche</p>
